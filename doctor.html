@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title></title>
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+  <!-- <form action="http://localhost:8080/Kratin/connection.php" method="post"> -->
+    <form action="connectionab.php" method="post">
+ <div class="wrapper">
+    <div class="title">
+      Doctor's Prescription
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label for="firstName">First Name</label>
+          <input type="text" class="input" id="firstName" name="firstName" />
+       </div>  
+        <div class="inputfield">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="input" id="lastname" name="lastName">
+       </div>  
+        <div class="inputfield">
+          <label for="symtoms">Symptoms</label>
+          <input type="text" class="input" id="symptoms" name="symptoms">
+       </div>
+        <div class="inputfield">
+          <label for="temperature">Temperature</label>
+          <input type="number" class="input" id="temperature" name="temperature">
+       </div> 
+         <div class="inputfield">
+          <label for="glucoseLevel">Glucose level</label>
+          <input type="number" class="input" id="glucoseLevel" name="glucoseLevel">
+       </div> 
+       <div class="inputfield">
+          <label for="medication">Medications</label>
+          <input type="text" class="input" id="medication" name="medication">
+       </div>
+       <div class="inputfield">
+          <label for="diet">Diet</label>
+          <textarea  type="text" class="input" id="diet" name="diet" rows="4" cols="50">
+            text...
+          </textarea>
+
+          
+         
+       </div>
+       
+      <div class="inputfield">
+        <input type="submit" value="Submit" class="btn">
+      </div>
+    </div>
+</div>
+</form>
+<!-- ?php include 'connection.php';
+          $firstName = $_POST['firstName'];
+            $lastName = $_POST['lastName'];
+            $gender = $_POST['gender'];
+            $symtoms = $_POST['symtoms'];
+            $temperature = $_POST['temperature'];
+            $glucoseLevel = $_POST['glucoseLevel'];
+
+              //Database connection
+            $con = mysql_connect()("localhost","root","");
+            if(!$con)
+            {
+            die('Connection Failed :'.mysql_error());
+            }
+
+            mysql_select_db("test",$con);
+
+            $query="INSERT INTO doctor(firstName, lastName, symtoms, temperature, glucoseLevel, medication, diet)VALUES('$firstName', 
+            '$lastName', '$symtoms', '$temperature', '$glucoseLevel', '$diet')";
+            if(!mysql_query($query,$con))
+            {
+            die('Error...'.mysql_error);
+            }else
+            {
+            echo "Data Inserted";
+            
+
+            ?> -->
+</body>
+</html>
